@@ -1,5 +1,7 @@
 ## Another Solution 
-**
+
+***
+
 SELECT a1.machine_id, ROUND(AVG(ABS(a1.timestamp - a2.timestamp)),3) AS processing_time
 FROM (SELECT * FROM Activity
 WHERE activity_type = 'start') a1,
